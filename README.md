@@ -25,6 +25,6 @@ Provides a library of functiuns to handle binary operations
 - That's all you need to do. A prompt will appear with the results of the samples ( check sample.png )
 - You might have warnings due to the %lld format in printf. Depends of your gcc options but it is 'irrelevant' and will not be a problem.
 
-- I'm really open to suggestions to improve the code
-- I'm really open to your feeds ( what you think, did it help, ... )
-- Thank you for reading this
+- I'm really opened to suggestions in order to improve the code
+- I'm really opened to your feeds ( what you think, did it help, ... )
+- Thank you for reading this !
