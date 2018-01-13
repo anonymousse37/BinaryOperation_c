@@ -32,7 +32,7 @@ Provides a library of functiuns to handle binary operations
 
 For example, this is how to realize and OR operation between two binary words
 
-'''
+```
 binw_set_sz(); // The first function to call. It sets the size of the binary words. Default is the size of long long int i.e 64 bits
 t_binw *b3 = NULL;
 t_binw *b4 = NULL;
@@ -42,19 +42,20 @@ long long int d4 = 0;
 long long int d5 = 0;
 if ( (b3 = binw_create_random()) )
 {
-    binw_display(b3, "         b3"); printf(" = %lld", binw_to_dec(b3));
-    if ( (b4 = binw_create_random()) )
-    {
-        binw_display(b4, "         b4"); printf(" = %lld",binw_to_dec(b4));
-        if ( (b5 = binw_or(b3,b4)) )
-        {
-            d5=binw_to_dec(b5);
-            binw_display(b5, "b5=b2 OR b3"), printf(" = %lld", d5);
-            binw_destroy(b5);
-        }
-        else printf("\n      b5 is NULL");
-        binw_destroy(b4);
+   binw_display(b3, "b3"); 
+   printf(" = %lld", binw_to_dec(b3));
+   if ( (b4 = binw_create_random()) )
+   {
+      binw_display(b4, "b4"); printf(" = %lld",binw_to_dec(b4));
+      if ( (b5 = binw_or(b3,b4)) )
+      {
+         d5=binw_to_dec(b5);
+         binw_display(b5, "b5=b2 OR b3"), printf(" = %lld", d5);
+         binw_destroy(b5);
+      }
+      else printf("\nb5 is NULL");
+      binw_destroy(b4);
     }
     binw_destroy(b3);
 }
-'''
+```
