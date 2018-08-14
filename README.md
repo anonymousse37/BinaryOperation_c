@@ -30,7 +30,7 @@ Provides a library of functiuns to handle binary operations
 - Thank you for reading this !
 
 
-For example, this is how to realize and OR operation between two binary words
+For example, this is how to do an OR operation between two binary words
 
 ```
 binw_set_sz(); // The first function to call. It sets the size of the binary words. Default is the size of long long int i.e 64 bits
